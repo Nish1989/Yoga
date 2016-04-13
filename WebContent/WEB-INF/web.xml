@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Yoga</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+    <servlet>
+        <servlet-name>FlipBook</servlet-name>
+        <servlet-class>com.yoga.web.FlipBookServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>FlipBook</servlet-name>
+        <url-pattern>/FlipBook</url-pattern>
+    </servlet-mapping>
+    
+    
+        <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>com.yoga.admin.AdministrativeServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>com.yoga.web.FileUploadServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
